@@ -16,14 +16,11 @@ if [ "$TERM" != "dumb" ]; then
     #alias vdir='ls --color=auto --format=long'
 fi
 
-#export ALSA_OUTPUT_PORTS="128:0"
-#export SCUMMVM_PORT=128:0
-
 alias su='su -l'
 
 ## The Prompt
 export PS1="[%n@%m: $(print '%{\e[1;34m%}%1~%{\e[0m%}')]$ "
 
 # Fix manpage scrolling
-export PAGER=less
+#export PAGER=less
 

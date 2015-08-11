@@ -1,0 +1,9 @@
+
+:set colorcolumn=80
+:highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+
+filetype plugin indent on
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
