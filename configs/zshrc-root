@@ -1,0 +1,29 @@
+
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/user/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+
+# enable color support of ls and also add handy aliases
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    #alias dir='ls --color=auto --format=vertical'
+    #alias vdir='ls --color=auto --format=long'
+fi
+
+export ALSA_OUTPUT_PORTS="128:0"
+export SCUMMVM_PORT=128:0
+
+## The Prompt
+export PS1="[$(print '%{\e[1;31m%}%n%{\e[0m%}')@%m: $(print '%{\e[1;34m%}%1~%{\e[0m%}')]# "
+

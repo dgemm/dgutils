@@ -1,0 +1,29 @@
+# Lines configured by zsh-newuser-install
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+bindkey -e
+
+zstyle :compinstall filename '/home/user/.zshrc'
+autoload -Uz compinit
+compinit
+
+# enable color support of ls and also add handy aliases
+if [ "$TERM" != "dumb" ]; then
+    eval "`dircolors -b`"
+    alias ls='ls --color=auto'
+    #alias dir='ls --color=auto --format=vertical'
+    #alias vdir='ls --color=auto --format=long'
+fi
+
+#export ALSA_OUTPUT_PORTS="128:0"
+#export SCUMMVM_PORT=128:0
+
+alias su='su -l'
+
+## The Prompt
+export PS1="[%n@%m: $(print '%{\e[1;34m%}%1~%{\e[0m%}')]$ "
+
+# Fix manpage scrolling
+export PAGER=less
+
