@@ -1,6 +1,26 @@
 
-:set colorcolumn=80
-:highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
+set nocompatible
+
+set showcmd
+
+filetype on
+filetype plugin on
+syntax enable
+set grepprg=grep\ -nH\ $*
+
+set autoindent
+
+" Line numbers
+set number
+
+" Incremental search
+set incsearch
+
+" Highlight search matches
+set hlsearch
+
+set colorcolumn=80
+highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 
 filetype plugin indent on
 set tabstop=2
