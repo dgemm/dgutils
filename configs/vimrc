@@ -29,3 +29,8 @@ set expandtab
 
 set whichwrap+=<,>
 
+set backspace=indent,eol,start
+
+set statusline+=%f
+set laststatus=2
+
