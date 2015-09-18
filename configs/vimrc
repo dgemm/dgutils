@@ -38,4 +38,5 @@ set statusline+=%=%l/%L
 set laststatus=2
 
 set cursorline
+hi CursorLine cterm=None ctermbg=black
 
