@@ -24,3 +24,7 @@ export PS1="[%n@%m: $(print '%{\e[1;34m%}%1~%{\e[0m%}')]$ "
 # Fix manpage scrolling
 #export PAGER=less
 
+# Allow us to exit leaving jobs running.
+setopt NO_HUP
+setopt NO_CHECK_JOBS
+
