@@ -28,3 +28,9 @@ export PS1="[%n@%m: $(print '%{\e[1;34m%}%1~%{\e[0m%}')]$ "
 setopt NO_HUP
 setopt NO_CHECK_JOBS
 
+# Key bindings sometimes required to fix home/end/delete/insert
+# bindkey '\eOH'    beginning-of-line  # gnome-terminal
+# bindkey '\e[2~'   overwrite-mode     # Linux console, xterm, gnome-terminal
+# bindkey '\e[3~'   delete-char        # Linux console, xterm, gnome-terminal
+# bindkey '\eOF'    end-of-line        # gnome-terminal​
+
