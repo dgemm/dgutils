@@ -6,7 +6,7 @@ set showcmd
 filetype on
 filetype plugin on
 syntax enable
-color elflord
+color delek
 set grepprg=grep\ -nH\ $*
 
 set autoindent
@@ -38,5 +38,5 @@ set statusline+=%=%l/%L
 set laststatus=2
 
 set cursorline
-hi CursorLine cterm=None ctermbg=black
+hi CursorLine cterm=None ctermbg=lightgrey
 
